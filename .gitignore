@@ -7,12 +7,30 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+# 의존성 / 빌드
 node_modules
 dist
 dist-ssr
+
+# Yarn
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+.pnp.*
+.yarn/install-state.gz
+
+# 환경 변수
+.env
+.env.*
+!.env.example
+
+# 로컬
 *.local
 
-# Editor directories and files
+# 에디터 / OS
 .vscode/*
 !.vscode/extensions.json
 .idea
@@ -22,3 +40,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# 테스트 / 커버리지
+coverage
